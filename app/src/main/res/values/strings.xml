@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">CUSPMX</string>
+    //Principal
+    <string name="btn1">Iniciar Sesión</string>
+    <string name="btn2">Modificar</string>
+    <string name="btn3">Registro</string>
+
+    //Registro
+    <string name="titulo1">Test</string>
+    <string name="tnombre">Nombre(s)</string>
+    <string name="cnombre">Escribe tu nombre</string>
+    <string name="tapellido">Apellido(s)</string>
+    <string name="capellido">Escribe tu(s) apellido(s)</string>
+    <string name="tnumcuenta">Numero de cuenta</string>
+    <string name="cnumcuenta">Escribe tu numero de cuenta</string>
+    <string name="tcorreo">Correo electronico</string>
+    <string name="ccorreo">ejemplo@ejemplo.com</string>
+    <string name="tcontraseña">Contraseña</string>
+    <string name="ccontraseña">Minimo 6 caracteres</string>
+    <string name="tgenero">Genero</string>
+    <string name="tgenero1">Masculino</string>
+    <string name="tgenero2">Femenino</string>
+    <string name="tfacultad">Facultad</string>
+    <string name="tfacultad1">Facultad de Arquitectura</string>
+    <string name="tfacultad2">Facultad de Contaduría</string>
+    <string name="tfacultad3">Facultad de Ingeniería</string>
+    <string name="tfacultad4">Facultad de Medicina</string>
+    <string name="tfacultad5">Facultad de Psicología</string>
+    <string name="tEnviar">Enviar</string>
+    <string name="mensajeGenero">Selecciona un genero</string>
+    <string name="mensajeFac">Selecciona una Facultad</string>
+    <string name="toastIni">Alumno Guardado.</string>
+    <string name="toastNombre">" Nombre(s): "</string>
+    <string name="toastApellido">" Apellido(s): "</string>
+    <string name="toastNumC">" Numero de Cuenta: "</string>
+    <string name="toastCorreo">" Correo: "</string>
+    <string name="toastContraseña">" Contraseña: "</string>
+    <string name="toastGenero">" Genero: "</string>
+    <string name="toastFacultad">" Facultad: "</string>
+    <string name="mensajeNum">El numero de cuenta debe tener 9 digitos</string>
+    <string name="mensajeNom">Nombre invalido</string>
+    <string name="mensajeApell">Apellido Invalido</string>
+    <string name="mensajeCorreo">Correo Invalido</string>
+    <string name="mensajeContraseña">La contraseña debe contener minimo 6 caracteres</string>
+    //Login
+    <string name="tLUsuario">Usuario</string>
+    <string name="cLUsuario">Escribe tu correo</string>
+    <string name="tLContraseña">Contraseña</string>
+    <string name="cLContraseña">***************</string>
+
+    //Mensaje Carga
+    <string name="mRegistro">Registrando Usuario</string>
+    <string name="eRegistro">El correo ya fue usado,comunicarse al siguiente correo: grandeveloper@gmail.com</string>
+    <string name="bdUsuario">usuario</string>
+    <string name="bdNombre">nombre</string>
+    <string name="bdApellidos">apellidos</string>
+    <string name="bdEmail">email</string>
+    <string name="bdGenero">genero</string>
+    <string name="bdFacultad">facultad</string>
+    <string name="bdCuenta">cuenta</string>
+
+    //Mensaje Inicio Seccion
+    <string name="isEspera">Ingresando, por favor espere...</string>
+    <string name="isIngresoID">Su ID:</string>
+    <string name="isIngreso">Ingreso correctamente:</string>
+
+    //Plataforma
+    <string name="tvContenido">Contenido exclusivo...</string>
+    <string name="btnCerrar">Cerrar Sesion</string>
+
+    <string name="btnGuardar">Guardar</string>
+    <string name="mfDatos">Guardando Datos</string>
+    <string name="mfGuardar">Ocurrio un error al guardar</string>
+
+
+
+
+
+
+
+</resources>

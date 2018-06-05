@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a72dff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#b8ffaa</color>
+    //Inicio
+    <color name="Main">#f4ff9f</color>
+    <color name="Titulo">#c44fff</color>
+    <color name="btn1">#a9c0ff</color>
+    <color name="btn2">#ff6565</color>
+    <color name="btn3">#fffa65</color>
+    //Registro
+    <color name="TextView">#ff8000</color>
+    <color name="tv2">#fff49f</color>
+    <color name="tv4">#efd7ff</color>
+    <color name="tv3">#a9ffee</color>
+    <color name="tv5">#ffd3d2</color>
+    <color name="tv6">#c8fffd</color>
+    <color name="tv7">#c8d6ff</color>
+    <color name="login">#54ffee</color>
+</resources>

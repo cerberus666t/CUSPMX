@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "609545811852",
+    "firebase_url": "https://cuspmx.firebaseio.com",
+    "project_id": "cuspmx",
+    "storage_bucket": "cuspmx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609545811852:android:a949d2d515d5fc3b",
+        "android_client_info": {
+          "package_name": "grandeveloper.cuspmx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609545811852-ec2auubp0c7gnrqls6c03e5qvtjd1rri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "grandeveloper.cuspmx",
+            "certificate_hash": "267f2e0fb4721f01831489044f3ce9be05a82102"
+          }
+        },
+        {
+          "client_id": "609545811852-169tvcnpghgma4ogeqd59g2tcmj1erth.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "609545811852-169tvcnpghgma4ogeqd59g2tcmj1erth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBADeUidmCuQjjvzSkgRNLYtZOcV3H8Ph4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609545811852-169tvcnpghgma4ogeqd59g2tcmj1erth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

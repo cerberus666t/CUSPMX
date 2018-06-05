@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8fffd">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/titulo1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="@string/tnombre"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:hint="@string/cnombre"
+            android:maxLength="30"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/tvApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv2"
+            android:text="@string/tapellido"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv2"
+            android:ems="10"
+            android:hint="@string/capellido"
+            android:maxLength="30" />
+
+        <TextView
+            android:id="@+id/tvNumCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv3"
+            android:text="@string/tnumcuenta"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etNumCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv3"
+            android:hint="@string/cnumcuenta"
+            android:inputType="number"
+            android:maxLength="9" />
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv4"
+            android:text="@string/tcorreo"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv4"
+            android:ems="10"
+            android:hint="@string/ccorreo"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv7"
+            android:text="@string/tcontraseña"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+
+        <EditText
+            android:id="@+id/etContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv7"
+            android:ems="10"
+            android:hint="@string/ccontraseña"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tvGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv5"
+            android:text="@string/tgenero"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/cbGenero1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv5"
+            android:text="@string/tgenero1" />
+
+        <CheckBox
+            android:id="@+id/cbGenero2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv5"
+            android:text="@string/tgenero2" />
+
+        <TextView
+            android:id="@+id/tvFacultad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv6"
+            android:text="@string/tfacultad"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/cbFacultad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv6"
+            android:text="@string/tfacultad1" />
+
+        <CheckBox
+            android:id="@+id/cbFacultad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv6"
+            android:text="@string/tfacultad2" />
+
+        <CheckBox
+            android:id="@+id/cbFacultad3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv6"
+            android:text="@string/tfacultad3" />
+
+        <CheckBox
+            android:id="@+id/cbFacultad4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv6"
+            android:text="@string/tfacultad4" />
+
+        <CheckBox
+            android:id="@+id/cbFacultad5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tv6"
+            android:text="@string/tfacultad5" />
+
+        <Button
+            android:id="@+id/bnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:text="@string/tEnviar"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+</ScrollView>
+
