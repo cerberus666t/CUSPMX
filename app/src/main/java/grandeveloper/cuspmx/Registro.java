@@ -196,6 +196,9 @@ public class Registro extends AppCompatActivity {
                                 }
                             });
                 }
+                else{
+                    Log.i(LOGTAG, "Usuario no registrado, por datos incorrectos");
+                }
             }
         });
 

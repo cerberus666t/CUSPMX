@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 //By: Gutierrez Merida Cristhian David
 public class IniciarSesion extends AppCompatActivity {
+    private static final String LOGTAG="INFO";
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener listener;
@@ -79,8 +81,10 @@ public class IniciarSesion extends AppCompatActivity {
                             pbProgreso.dismiss();
                             if (task.isSuccessful()) {
                                 Toast.makeText(IniciarSesion.this, getResources().getString(R.string.isIngreso), Toast.LENGTH_SHORT).show();
-                            } else
+                            } else {
                                 Toast.makeText(IniciarSesion.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Log.i(LOGTAG, "No se pudo acceder, usuario o contraseña invalidos");
+                                }
                         }
                     });
         }
