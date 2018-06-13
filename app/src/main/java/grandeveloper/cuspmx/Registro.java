@@ -173,12 +173,12 @@ public class Registro extends AppCompatActivity {
                             cContraseña.getText().toString(),genero,facultad,contexto);
 
                     Toast.makeText(getApplicationContext(),alumno.toString(),Toast.LENGTH_LONG).show();
-                    Toast.makeText(getApplicationContext(),alumno.toString(),Toast.LENGTH_LONG).show();
                     Log.i("INFO", alumno.toString());
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            Toast.makeText(getApplicationContext(),"Usuario Registrado",Toast.LENGTH_LONG).show();
                             Log.i("INFO", "Usuario registrado");
                         }
                     },5000); // will trigger your code after 5 seconds
