@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -82,18 +83,24 @@ public class Registro extends AppCompatActivity {
                 if(cNombre.length()==0){
                     Toast.makeText(getApplicationContext(),
                             getResources().getString(R.string.mensajeNom),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", getResources().getString(R.string.mensajeNom));
+
                 }
 
                 //Valida Apellido
                 if(cApellido.length()==0){
                     Toast.makeText(getApplicationContext(),
                             getResources().getString(R.string.mensajeApell),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", getResources().getString(R.string.mensajeApell));
+
                 }
 
                 //Valida Numero de cuenta
                 if(cNumCuenta.length()!=9){
                     Toast.makeText(getApplicationContext(),
                             getResources().getString(R.string.mensajeNum),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", getResources().getString(R.string.mensajeNum));
+
                 }
 
                 //Valida Correo
@@ -101,12 +108,15 @@ public class Registro extends AppCompatActivity {
                 if(verifica.verifica()!=true){
                     Toast.makeText(getApplicationContext(),
                             getResources().getString(R.string.mensajeCorreo),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", getResources().getString(R.string.mensajeCorreo));
+
                 }
 
                 //Valida Contraseña (minimo 6 caracteres)
                 if(cContraseña.length()<6){
                     Toast.makeText(getApplicationContext(),
                             getResources().getString(R.string.mensajeContraseña),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", getResources().getString(R.string.mensajeContraseña));
                 }
 
                 //Valida Genero
@@ -121,6 +131,8 @@ public class Registro extends AppCompatActivity {
                 if(valGenero!=1){
                     Toast.makeText(getApplicationContext(),
                             getResources().getString(R.string.mensajeGenero),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", getResources().getString(R.string.mensajeGenero));
+
                 }
 
 
@@ -149,6 +161,8 @@ public class Registro extends AppCompatActivity {
                 if(valFacultad!=1){
                     Toast.makeText(getApplicationContext(),
                             getResources().getString(R.string.mensajeFac),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", getResources().getString(R.string.mensajeFac));
+
                 }
 
 
@@ -159,7 +173,15 @@ public class Registro extends AppCompatActivity {
                             cContraseña.getText().toString(),genero,facultad,contexto);
 
                     Toast.makeText(getApplicationContext(),alumno.toString(),Toast.LENGTH_LONG).show();
-                    Log.i(LOGTAG, alumno.toString());
+                    Toast.makeText(getApplicationContext(),alumno.toString(),Toast.LENGTH_LONG).show();
+                    Log.i("INFO", alumno.toString());
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Log.i("INFO", "Usuario registrado");
+                        }
+                    },5000); // will trigger your code after 5 seconds
 
 
                     //Registrando Usuario
@@ -191,6 +213,8 @@ public class Registro extends AppCompatActivity {
 
                                     else{
                                         Toast.makeText(Registro.this,R.string.eRegistro,Toast.LENGTH_LONG).show();
+                                        Log.i("INFO", getResources().getString(R.string.eRegistro));
+
                                     }
 
                                 }

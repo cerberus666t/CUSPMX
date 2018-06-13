@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -81,8 +82,13 @@ public class Modificar extends AppCompatActivity {
                             pbProgreso.dismiss();
                             if (task.isSuccessful()) {
                                 Toast.makeText(Modificar.this, getResources().getString(R.string.isIngreso), Toast.LENGTH_SHORT).show();
-                            } else
+                                Log.i("INFO", "El usuario introdujo datos correctos.");
+
+                            } else {
                                 Toast.makeText(Modificar.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Log.i("INFO", "No se pudo acceder, usuario o contraseña invalidos");
+                            }
+
                         }
                     });
         }

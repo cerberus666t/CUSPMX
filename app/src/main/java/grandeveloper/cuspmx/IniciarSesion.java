@@ -81,6 +81,7 @@ public class IniciarSesion extends AppCompatActivity {
                             pbProgreso.dismiss();
                             if (task.isSuccessful()) {
                                 Toast.makeText(IniciarSesion.this, getResources().getString(R.string.isIngreso), Toast.LENGTH_SHORT).show();
+                                Log.i("INFO", "El usuario introdujo datos correctos.");
                             } else {
                                 Toast.makeText(IniciarSesion.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 Log.i(LOGTAG, "No se pudo acceder, usuario o contraseña invalidos");

@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -93,19 +95,44 @@ public class Modificar2 extends AppCompatActivity {
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String nombre = cNombre.getText().toString();
-                final String apellidos = cApellido.getText().toString() ;
-                final String cuenta = cNumCuenta.getText().toString();
-                mDatabase = FirebaseDatabase.getInstance().getReference().child(getResources().getString(R.string.bdUsuario));
-                DatabaseReference currentUserDB = mDatabase.child(mAuth.getCurrentUser().getUid());
-                pbProgreso.setMessage(getResources().getString(R.string.mfDatos));
-                pbProgreso.show();
-                currentUserDB.child(getResources().getString(R.string.bdNombre)).setValue(nombre);
-                currentUserDB.child(getResources().getString(R.string.bdApellidos)).setValue(apellidos);
-                currentUserDB.child(getResources().getString(R.string.bdCuenta)).setValue(cuenta);
-                Intent intent = new Intent(Modificar2.this, IniciarSesion.class);
-                startActivity(intent);
-                finish();
+
+                if(cNumCuenta.length()!=9){
+                    Toast.makeText(getApplicationContext(),
+                            getResources().getString(R.string.mensajeNum),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", "El numero de cuenta no es de 9 digitos");
+                }
+                if (cNombre.length()==0){
+                    Toast.makeText(getApplicationContext(),
+                            getResources().getString(R.string.mensajeNom),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", "Nombre invalido");
+
+                }
+                if (cApellido.length()==0){
+                    Toast.makeText(getApplicationContext(),
+                            getResources().getString(R.string.mensajeApell),Toast.LENGTH_SHORT).show();
+                    Log.i("INFO", "Apellido invalido");
+
+                }
+
+                if (cNumCuenta.length()==9 && cNombre.length()==0 && cApellido.length()==0) {
+                    final String nombre = cNombre.getText().toString();
+                    final String apellidos = cApellido.getText().toString();
+                    final String cuenta = cNumCuenta.getText().toString();
+                    mDatabase = FirebaseDatabase.getInstance().getReference().child(getResources().getString(R.string.bdUsuario));
+                    DatabaseReference currentUserDB = mDatabase.child(mAuth.getCurrentUser().getUid());
+                    pbProgreso.setMessage(getResources().getString(R.string.mfDatos));
+                    pbProgreso.show();
+                    currentUserDB.child(getResources().getString(R.string.bdNombre)).setValue(nombre);
+                    currentUserDB.child(getResources().getString(R.string.bdApellidos)).setValue(apellidos);
+                    currentUserDB.child(getResources().getString(R.string.bdCuenta)).setValue(cuenta);
+                    Intent intent = new Intent(Modificar2.this, IniciarSesion.class);
+                    startActivity(intent);
+                    finish();
+                    Log.i("INFO", "Datos modificados correctamente");
+                }
+                else{
+                    Log.i("INFO", "Existe un problema con los datos proporcionados por el usuario");
+                }
 
             }
         });
